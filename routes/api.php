@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +31,6 @@ Route::get('/todo', [ApiController::class, 'getDataApi']);
 Route::post('/todo', [ApiController::class, 'postDataApi']);
 Route::put('/todo/{id}', [ApiController::class, 'updateDataApi']);
 Route::delete('/todo/{id}', [ApiController::class, 'deleteDataApi']);
+
+// registration
+Route::post('/registration', [AuthController::class, 'registration']);

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('todo_id');
             $table->string('username');
+            $table->string('password');
             $table->timestamps();
         });
     }
